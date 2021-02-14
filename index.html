@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <audio id="audio">
+        <source src="" type="audio/mpeg">
+      </audio>
+
+
+      
+    <div class="app">
+        <img id="album-background" width="350" height="380" src="assets/images/master_cover.jpg" alt="album art">
+        <h3 id="title" class="title"></h3>
+
+        <div class="bar">
+            <input type="range" id="progress" value="0.5" step="0.1">
+        </div>
+
+        <div class="duration">
+            <p id="currentTime">0</p>
+            <p id="totalTime">00:00</p>
+        </div>
+
+        <div class="menu">
+            <img id="repeat" width="30px" height="20px" src="assets/images/icons/redo-solid.svg" alt="repeat">
+    
+            <img id="back" width="35px" height="25px" src="assets/images/icons/backward.svg" alt="backward">
+            <img id="play" width="60px" height="50px" src="assets/images/icons/caret.svg" alt="play">
+            <img id="next" width="35px" height="25px" src="assets/images/icons/forward.svg" alt="forward">
+
+            <img id="volume" width="30px" height="25px" src="assets/images/icons/volume.png" alt="volume">
+            <input type="range" id="volume-input" value="0.5" step="0.1">
+        </div>
+    </div>
+
+<script src="interface.js"></script>
+<script src="script.js"></script>   
+</body>
+</html>
